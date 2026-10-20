@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="si">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>පාඩම් සටහන් · Study Notes</title>
+  <meta name="description" content="Science lesson notes as PDFs: the Solar System and Heredity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f5f1;
+      --card: #ffffff;
+      --text: #1d1d1b;
+      --muted: #6b6a65;
+      --line: #e4e2db;
+      --accent: #1f6f50;
+      --accent-text: #ffffff;
+      --ghost-bg: #ecf3ef;
+      --shadow: 0 1px 2px rgba(0,0,0,.05), 0 4px 16px rgba(0,0,0,.06);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141513;
+        --card: #1e201d;
+        --text: #ecebe6;
+        --muted: #a3a29b;
+        --line: #2f322d;
+        --accent: #5fc59a;
+        --accent-text: #0e1a14;
+        --ghost-bg: #23302a;
+        --shadow: none;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Noto Sans Sinhala", system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    main {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 40px 16px 56px;
+    }
+    header { margin-bottom: 28px; }
+    h1 {
+      font-size: clamp(1.6rem, 5vw, 2.2rem);
+      margin: 0 0 4px;
+      font-weight: 700;
+    }
+    header p { margin: 0; color: var(--muted); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+    }
+    .cover {
+      display: block;
+      aspect-ratio: 16 / 9;
+      background: var(--line);
+      overflow: hidden;
+    }
+    .cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .body { padding: 16px 18px 18px; display: flex; flex-direction: column; flex: 1; }
+    h2 { font-size: 1.3rem; margin: 0; font-weight: 700; }
+    .en { color: var(--muted); margin: 0 0 6px; }
+    .meta { color: var(--muted); font-size: .9rem; margin: 0 0 16px; }
+    .actions { display: flex; gap: 10px; margin-top: auto; }
+    .btn {
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 11px 14px;
+      border-radius: 10px;
+      font-size: .98rem;
+    }
+    .btn.primary { background: var(--accent); color: var(--accent-text); }
+    .btn.ghost { background: var(--ghost-bg); color: var(--accent); }
+    .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+    footer { margin-top: 32px; color: var(--muted); font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>පාඩම් සටහන්</h1>
+      <p>Study notes · tap <strong>බලන්න</strong> to read, or <strong>බාගන්න</strong> to save the PDF.</p>
+    </header>
+
+    <div class="grid">
+      <article class="card">
+        <a class="cover" href="https://github.com/mehara-rothila/miraji/blob/main/Heredity.pdf">
+          <img src="covers/heredity.jpg" alt="Slide: ජීවීන් අතර ඇති විවිධත්වය, with two frangipani flowers">
+        </a>
+        <div class="body">
+          <h2>ආවේණිය</h2>
+          <p class="en">Heredity</p>
+          <p class="meta">පිටු 26 · 4.3 MB</p>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/mehara-rothila/miraji/blob/main/Heredity.pdf">බලන්න</a>
+            <a class="btn ghost" href="Heredity.pdf" download>බාගන්න</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="cover" href="https://github.com/mehara-rothila/miraji/blob/main/Solar_System.pdf">
+          <img src="covers/solar-system.jpg" alt="Diagram of the solar system showing the Sun, planets and asteroid belt">
+        </a>
+        <div class="body">
+          <h2>සෞරග්‍රහ මණ්ඩලය</h2>
+          <p class="en">The Solar System</p>
+          <p class="meta">පිටු 4 · 0.9 MB</p>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/mehara-rothila/miraji/blob/main/Solar_System.pdf">බලන්න</a>
+            <a class="btn ghost" href="Solar_System.pdf" download>බාගන්න</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <footer>බලන්න = View · බාගන්න = Download</footer>
+  </main>
+</body>
+</html>
